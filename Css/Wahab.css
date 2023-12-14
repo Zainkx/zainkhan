@@ -1,0 +1,40 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body
+{
+    background-color: #cacece;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card
+{
+    border-radius: 50px;
+    display: flex;
+    background-color: transparent;
+    margin-left: 20px;
+    text-align: center;
+}
+.footer1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rdeath
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card img
+{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+.Mountain
+{
+    height: 500px;
+    width: 80%;
+    border-radius: 20px;
+}
+

@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hazards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/Homepage.css">
+    <link rel="stylesheet" href="../Css/Wahab.css">
+    <link rel="stylesheet" href="../Css/Jawwad.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../Images/Logo-removebg-preview.png" type="image/x-icon">
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <div class="col-md-12 top-bar row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1">
+            <img src="../Images/Logo-removebg-preview.png" class="w-100 h-100" alt="">
+        </div>
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-2 py-5 px-3 text-center">
+            <i class="fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#modalId"></i>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm py-0">
+      <div class="container">
+          <div class="img col-2">
+          </div>
+
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-md-10" id="collapsibleNavId">
+              <ul class="navbar-nav col-md-8 text-center">
+                  <li class="nav-item px-5">
+                      <a class="nav-link py-3 px-3" href="../Homepage.html" aria-current="page">Home <span
+                              class="visually-hidden">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link  py-3 px-3 " href="org histroy.html" aria-current="page">History<span
+                              class="visually-hidden">(current)</span></a>
+                  </li>
+                  <li class="nav-item px-5">
+                      <a class="nav-link py-3 px-3" href="org Hazards.html">Hazards</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link  py-3 px-3 dropdown-toggle" href="#" id="dropdownId"
+                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownId">
+                          <a class="dropdown-item" href="himalays.html">Himalays</a>
+                          <a class="dropdown-item" href="Cliff.html">Cliff</a>
+                          <a class="dropdown-item" href="Valcono.html">Valcano</a>
+                          <a class="dropdown-item" href="Urals.html">Urals</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown px-5">
+                      <a class="nav-link  py-3 px-3 dropdown-toggle" href="#" id="dropdownId"
+                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Techniques</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownId">
+                          <a class="dropdown-item" href="Climbing Techniques.html">Climbing Techniques</a>
+                          <a class="dropdown-item" href="Rope Managment.html">Rope Management</a>
+                          <a class="dropdown-item" href="Ice _ snow Tec.html">Ice and Snow Techniques</a>
+                          <a class="dropdown-item" href="Weather Forcasting.html">Weather Forecasting</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link py-3 px-3  dropdown-toggle" href="#" id="dropdownId"
+                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sheltering</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownId">
+                          <a class="dropdown-item" href="Base camp.html">Base Camp</a>
+                          <a class="dropdown-item" href="Hut.html">Hut</a>
+                          <a class="dropdown-item" href="Tent.html">Tent</a>
+                          <a class="dropdown-item" href="Snow Cave.html">Snow Cave</a>
+                      </div>
+                  </li>
+              </ul>
+              <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header bg-primary">
+                              <h5 class="modal-title" id="modalTitleId">Login Here</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                  id="close" onclick="close()"></button>
+                          </div>
+                          <div class="modal-body row">
+                              <div class="contact col-6">
+                                  <div class="contactsub1 col-lg-6 my-5">
+                                      <input type="text" class="name py-2 px-2 col-lg-12 border"
+                                          placeholder="Enter Your Name" id="name" onkeyup="namecheck()">
+                                      <p style="color: red;font-size: 10px; display: none;" class="name" id="name1">
+                                          Field must not be empty
+                                      </p>
+                                      <p style="color: red;font-size: 10px; display: none;" class="name" id="name2">
+                                          Name must contain a Capital
+                                          Alphabet in it
+                                      </p>
+                                      <br><br>
+                                      <input type="email" class="email py-2 px-2 col-lg-12 border"
+                                          placeholder="Enter Your Email" id="email" onkeyup="emailcheck()">
+                                      <p style="color: red;font-size: 10px;display: none;" class="email1" id="email1">
+                                          Field must not be empty</p>
+                                      <br><br>
+                                      <input type="password" class="password py-2 px-2 col-lg-12 border"
+                                          placeholder="Enter your Password" id="pass" onkeyup="passcheck()">
+                                      <p style="color: red;font-size: 10px;display: none;" class="pass" id="pass1">
+                                          Password field must not be
+                                          empty</p>
+                                      <p style="color: red;font-size: 10px;display: none;" class="pass" id="pass2">
+                                          Password must contain 8
+                                          characters in it</p>
+                                      <br><br>
+                                      <input type="password" class="rpassword py-2 px-2 col-lg-12 border"
+                                          placeholder="Confirm Password" id="repass" onkeyup="repasscheck()">
+                                      <p style="color: red;font-size: 10px;display: none;" class="repass"
+                                          id="repass1">Field must not be empty</p>
+                                      <p style="color: red;font-size: 10px;display: none;" class="repass"
+                                          id="repass2">Password must be same</p>
+                                      <br><br>
+                                      <button id="check" class="Sign-in" class="btn btn-primary"
+                                          onclick="check()">Sign In</button>
+                                  </div>
+                              </div>
+                              <div class="form-img col-lg-4">
+                                  <img src="../Images/Login-removebg-preview.png" alt="">
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+
+          </div>
+      </div>
+  </nav>
+</head>
+
+<body>
+    <div class="section2 container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="card text  mb-3" style="max-width: 70rem;">
+                <h4 class="card-header18">What Are The Dangers Of Mountain Climbing: 15 Potential Hazards</h4>
+                  <div class="card-body18">
+                    <h3 class="card-titel">What Are The Dangers Of Mountain Climbing: 15 Potential Hazards</h3>
+                    <h5 class="card-title">Mountain climbing is a dangerous sport. Even if a mountain is seen as “safe” and visited by tourists young and old, the risks of injuries are never going to be zero.</h5>
+                    <h5 class="card-title">So what are the dangers of mountain climbing? The number one danger of mountain climbing is the lack of awareness. Mountain climbing has its inherent environmental dangers. But often, it is the dangers caused by human action that leads to disastrous results.</h5>
+                    <h5 class="card-title">This doesn’t mean that you should never go mountain climbing. Or avoid certain mountains after hearing about past accidents that have occurred. What you should do it to be aware of the potential dangers out there, and prepare yourself for them.</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card text mb-3" style="max-width: 70rem;">
+                  <h1 class="card-header19">Be Aware Of Your Lack Of Awareness</h1>
+                  <div class="card-body19">
+                    <h1 class="card-titel">Be Aware Of Your Lack Of Awareness</h1>
+                    <h5 class="card-title">Before we dive into the hazards of mountain climbing, let’s talk a bit about the lack of awareness. A lack of awareness could be due to overconfidence. Sometimes a little knowledge is more dangerous than no knowledge. You might think you know it all and fail to heed advice from people who might just know bette</h5>
+                    <p class="card-text">A lack of awareness could also be due to a lack of knowledge or experience. If you don’t know what danger looks like, then you wouldn’t know when or how to stay away. How to work on your awareness:</p>
+                    <p class="card-text">Tell yourself that you don’t know anything (much). Tell yourself that asking for help and advice in crucial in your growth as a climber. Climb with people with more experience. You can learn a lot simply by observing them. Start out with shorter and easier climbs and see what problems you run into. Always have someone with you!</p>
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+                <div class="card text mb-3" style="max-width: 70rem;">
+                  <h2 class="card-header">Hazards Caused By The Environmental
+                  <h1 class="card-header2">1. High Altitudes</h1>
+                  <div class="card-body">
+                    <h1 class="card-title">1. High Altitudes</h1>
+                    <p class="card-text1">High altitudes can lead to altitude sickness. Elevations higher than 26,000 feet (8,000
+                      meters) is in the official ‘Death Zone’. Even if you do not get any altitude sickness during the climb, you
+                      still risk getting long term brain damage.</p>
+                    <p class="card-text1">What happens at high altitudes:</p>
+                    <p class="card-text1">The lower oxygen levels at high altitude lead to a lack of oxygen in your body. This
+                      results in altitude sickness.</p>
+                    <p class="card-text1">Altitude sickness may start occurring at 8,000 feet (2,500 meters).</p>
+                    <p class="card-text1">The prolonged periods of oxygen deprivation kills brain cells and other cells. This leads
+                      to long term brain damage.</p>
+                    <p class="card-text1">Altitude sickness ranges from mild to severe. These can occur at different altitudes for
+                      different people.</p>
+                    <p class="card-text1">Mild altitude sickness (also known as Acute Mountain Sickness (AMS)):</p>
+                    <p class="card-text1">Symptoms include a headache, difficulty sleeping, nausea, dizziness, fatigue, shortness of
+                      breath, loss of appetite, sleep problems and a general loss of energy.</p>
+            
+                    <p class="card-text1">Symptoms usually begin within 12 to 24 hours of arriving at a high altitude.</p>
+                    1
+                    <p class="card-text1">Mild forms of altitude sickness can often go away with rest within a day or two as you get
+                      used to the altitude. It is important that you have time to acclimatize and access your body conditions before
+                      a climb.</p>
+                    <p class="card-text1">Moderate altitude sickness:</p>
+                    <p class="card-text1">Symptoms are more intense and are not relieved by over-the-counter medicines.</p>
+                    <p class="card-text1">Symptoms include fatigue, weakness, and shortness of breath that worsen instead of
+                      improving over time. </p>
+                    <p class="card-text1">Symptoms also include confusion, loss of coordination, difficulty walking, worsening
+                      headache that is not relieved by medicines, nausea, and vomiting, and tightness in the chest. Normal activity
+                      is difficult, although you may still be able to walk on your own (might be staggering).</p>
+                    <p class="card-text1">Severe altitude sickness:</p>
+                    <p class="card-text1">Symptoms include shortness of breath at rest, coughing (might be with frothy spit), noisy
+                      breathing (gurgling or rattling sounds), fever. This is a sign of High altitude pulmonary edema (HAPE) where
+                      there is a dangerous build-up of fluid in the lungs </p>
+                    <p class="card-text1">Confusion, extreme fatigue, Inability to walk, severe headache, vomiting, and lethargy.
+                      This is a sign of High altitude cerebral edema (HACE) where there is is a build-up of fluid in the brain.</p>
+                    <p class="card-text1">gray, pale or bluish skin tone, lips or fingernails. </p>
+                    <br>
+                    <p class="card-text1">How to avoid altitude sickness and brain damage:</p>
+                    <p class="card-text1">Spend time acclimatizing to the higher elevations before your actual cli</p>
+                    <p class="card-text1">Stay low(er). Past studies showed that brain damage can occur starting from elevations of
+                      16,000 feet (4,800 meters)</p>
+                    <br>
+                    <p class="card-text1">What to do if you have altitude sickness:</p>
+                    <p class="card-text1">For mild altitude sickness, you need rest and sleep to help with acclimatization.</p>
+                    <p class="card-text1">Take medications such as Acetazolamide (Diamox) and Dexamethasone which might ease the
+                      symptoms. It is crucial to seek the advice of your doctor before taking any medications or drugs at high
+                      altitudes.</p>
+                    <p class="card-text1">Use supplemental oxygen.</p>
+                    <p class="card-text1">Return to a lower elevation. Severe altitude sickness is an emergency situation and can be
+                      fatal within hours. You must descend to a lower altitude immediately. Read more about altitude sickness here. </p>
+                 </div>
+                </div>
+            
+                  <div class="card text mb-3" style="max-width: 70rem;">
+                    <h1 class="card-header1">2. Extreme Temperatures</h1>
+                    <div class="card-body1">
+                      <h1 class="card-titel">2. Extreme Temperatures</h1>
+                      <p class="card-title">When climbing in a hot environment, you risk getting heat injuries. This includes heat
+                        exhaustion and heat stroke.</p>
+                      <p class="card-text">When climbing in a cold environment, you could lose your body heat too quickly. This
+                        leads to frostbites and hypothermia.</p>
+                      <p class="card-title">Heat exhaustion:</p>
+                      <p class="card-text">This is due to your body overheating. Symptoms include heavy sweating, dizziness,
+                        fainting, quick and weak heartbeat, headache, nausea, fatigue.</p>
+                      <p class="card-title">What to do: Rest in the shade, drink cold water or sports drink. Seek medical attention
+                        if the condition does not improv</p>
+                      <p class="card-text">Heat stroke:</p>
+                      <p class="card-text">When heat exhaustion is not treated, you could get heat stroke.</p>
+                      <p class="card-text">Symptoms include fever (temperature going above 104 F (40 C)), dry skin, dizziness,
+                        pounding heartbeat, headache, nausea, fatigue, confusion, loss of consciousness.</p>
+                      <p class="card-text">What to do</p>
+                      <p class="card-text">Rest in the shade, drink cold water or sports drink.</p>
+                      <p class="card-text">Remove all excess clothing, use water/ sponges/ ice packs/ wet towels to cool the body.
+                      </p>
+                      <p class="card-text">Seek medical attention immediately.</p>
+                      <p class="card-text">Hypothermia:</p>
+                      <p class="card-text">This is due to the loss of body heat.</p>
+                      <p class="card-text">Symptoms include temperatures going below 95 F (35 C), shivering, slow and shallow
+                        breathing, weak heartbeat, fatigue, confusion, loss of consciousness.</p>
+                      <p class="card-text">What to do</p>
+                      <p class="card-text">Move to a dry and warm location, remove any wet or cold clothing, cover with warm and dry
+                        clothing and blankets.</p>
+                      <p class="card-text">Move to a dry and warm location, remove any wet or cold clothing, cover with warm and dry
+                        clothing and blankets.</p>
+                      <p class="card-text">Move to a dry and warm location, remove any wet or cold clothing, cover with warm and dry
+                        clothing and blankets.</p>
+                      <p class="card-text">Frostbite:</p>
+                      <p class="card-text">Extreme loss of body heat which causes freezing of the skin and underlying tissues. This
+                        usually occurs at your extremities such as hands and feet</p>
+                      <p class="card-text">Symptoms include cold skin, prickly feeling, numbness, the stiffness of joints and
+                        muscles, skin turning red, white or blueish.</p>
+                      <p class="card-text">What to do:</p>
+                      <p class="card-text">Move to a dry and warm location, remove any wet or cold clothing, cover with warm and dry
+                        clothing and blankets.</p>
+                      <p class="card-text">Stop walking if your feet are frostbitten</p>
+                      <p class="card-text">You can use heating packs to warm your hands and feet. But do this slowly to avoid burns.
+                      </p>
+                      <p class="card-text">Drink hot or warm drinks.</p>
+                      <p class="card-text">Seek medical attention immediately.</p>
+                      <p class="card-text"> How to avoid getting too hot:</p>
+                      <p class="card-text">Pack appropriate climbing attire. Bring along a few thinner layers instead of one thick
+                        jacket.</p>
+                      <p class="card-text">Pack portable heat source such as heat packs.</p>
+                      <p class="card-text">How to avoid getting too cold:</p>
+                      <p class="card-text">Pack appropriate climbing attire. Bring along a few thinner layers instead of one thick
+                        jacket.</p>
+                      <p class="card-text">Pack portable heat source such as heat packs.</p>
+                      <p class="card-text">Make sure to stay dry</p>
+                      <p class="card-text">Have proper wet weather protection such as waterproof jackets or ponchos.</p>
+                      <p class="card-text">Avoid walking through water bodies such as rivers and streams.</p>
+                      <p class="card-text">Avoid wearing too many layers of clothing. The evaporation of sweat will cause you to
+                        lose body heat.</p>
+            
+                    </div>
+                  </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h1 class="card-header3">3. Natural Disasters</h1>
+                    <div class="card-body2">
+                    <h1 class="card-tite">3. Natural Disasters</h1>
+                      <p class="card-title">Unfortunately, a natural disaster is not something you can really plan for. Sometimes,
+                        an earthquake or volcano eruption might just strike at any moment.</p>
+                      <p class="card-text">These events might be uncommon, but the consequences are often severe.</p>
+                      <p class="card-text">Here are some potential natural disasters you might face during a climb:Z</p>
+                      <p class="card-text">Hurricanes/ typhoons</p>
+                      <p class="card-text">Earthquake</p>
+                      <p class="card-text">Volcanic eruption</p>
+                      <p class="card-text">Avalanche</p>
+                      <p class="card-text">What can cause you to get caught in a natural disaster:</p>
+                      <p class="card-text">Climbing during off season periods. Sometimes, mountains are closed due to the higher
+                        probability of natural disasters.</p>
+                      <p class="card-text">Sometimes, its just bad luck.</p>
+                      <p class="card-text">What happens when you get caught in a natural disaster:</p>
+                      <p class="card-text">Serious injuries or death. </p>
+                      <p class="card-text">Getting stuck. Access might be blocked and routes might be obstructed or damaged. It will
+                        be difficult to find your way out and it will take some time for help to reach you.</p>
+                      <p class="card-text">How to avoid getting caught in a natural disaster:</p>
+                      <p class="card-text">Climb during the official climbing season.</p>
+                      <p class="card-text">Learn more about the mountain and check for any natural disasters that have occurred in
+                        the past. Make sure you are aware of the risks and take the necessary precautions.</p>
+                      <p class="card-text">Understand the warning systems. If there are early detection systems in place, make sure
+                        you know what the alarms mean. You should also know to do when the alarm sounds.</p>
+                      <p class="card-text">What to do if you are caught in a natural disaster:</p>
+                      <p class="card-text">Stay in groups. You can look out for each other’s safety and make it easier for rescue
+                        personnel to locate you.</p>
+                      <p class="card-text">Use loud sounds like whistles or bright pieces of clothing to signal for help</p>
+                      <p class="card-text">Avoid taking unnecessary risks to help another person. The last thing anyone needs is
+                        another injured person.</p>
+                    </div>
+                  </div>
+            
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h2 class="card-header4">4. Bad Weather</h2>
+                    <div class="card-body3">
+                      <h2 class="card-titelx">4. Bad Weather</h2>
+                      <hp class="card-title">A light drizzle might seem harmless. But heavy rain, thunderstorms, lightning, and
+                        snowstorms can be deadly.</p>
+                        <p class="card-text">What can cause you to get caught in bad weather</p>
+                        <p class="card-text">You are not aware of the weather forecast or you choose to ignore it.</p>
+                        <p class="card-text">Your climb took longer than expected.</p>
+                        <p class="card-text">What happens when you get caught in bad weather:</p>
+                        <p class="card-text">You lose visibility.</p>
+                        <p class="card-text">You get extremely wet and cold.</p>
+                        <p class="card-text">The grounds become slippery and unstable. You might slip and fall.</p>
+                        <p class="card-text">There are risks of landslides, snowslides, falling objects, lightning strikes or
+                          flooding
+                        <p>
+                        <p class="card-text">How to avoid getting caught in bad weather:</p>
+                        <p class="card-text">Always check the latest weather forecast. Don’t ignore any advisories issued from
+                          authorities</p>
+                        <p class="card-text">Stop climbing if you are expecting bad weather. Don’t wait until it hits you.</p>
+                        <p class="card-text">Keep track of your pace. Have a backup plan if you are going slower than expected. Be
+                          prepared to turn back if necessary. </p>
+                        <p class="card-text">What to do if you are caught in bad weather: </p>
+                        <p class="card-text">Look out for potential falling objects. Things will get knocked out everywhere — loose
+                          rocks, sharp ice, dead logs or trees etc.</p>
+                        <p class="card-text">Stay out of low lying areas which are prone to flooding.</p>
+                        <p class="card-text">Stay as dry and warm as possible.</p>
+                    </div>
+            
+                  </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h2 class="card-header5">5. Lack Of Visibility</h2>
+                    <div class="card-body5">
+                      <h2 class="card-titel">5. Lack Of Visibility</h2>
+                      <h5 class="card-title">What can cause you to lose visibility:</h5>
+                      <p class="card-text">Heavy rain or snow.</p>
+                      <p class="card-text">Lack of lighting. Even with headlamps, your visibility is very low when you are climbing
+                        at night or in the early mornings.</p>
+                      <p class="card-text">Snow blindness (temporary blindness due to overexposure to the sun’s UV rays).</p>
+                      <p class="card-text">Exhaustion. You tend to shut down when you are tired. You start focusing only on what is
+                        in front of you and lose track of what is around you.</p>
+                      <h5 class="card-text">What happens when you lose visibility:</h5>
+                      <p class="card-text">You can’t see potential dangers.</p>
+                      <p class="card-text">You end up getting lost.</p>
+                      <h5 class="card-text">How to avoid losing visibility:</h5>
+                      <p class="card-text">Always check the latest weather forecast. Don’t ignore any advisories issued from
+                        authorities.</p>
+                      <p class="card-text">Stop climbing if you are expecting heavy rain or snow. Don’t wait until it hits you.
+                        Avoid climbing late into the night after sunset. Wear sunglasses when climbing in snowy or icy terrains.
+                        Make sure you have your headlamps and ample spare batteries for any early morning climbs. Secure light
+                        sticks on your backpacks so that it’s easier to keep track of each other. Keep close to your fellow
+                        climbers. Heavy rain or winds can drown out calls for help.</p>
+                      <h5 class="card-text">What to do if you lose visibility:</h5>
+                      <p class="card-text">Stop climbing and seek shelter as soon as possible.</p>
+                      <p class="card-text">Watch out for each other. Check regularly to make no one is missing.</p>
+                      <p class="card-text">If you are suffering from snow blindness, it would take a few days for the vision to
+                        return. Rest in a darkened environment.</p>
+                    </div>
+                  </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h1 class="card-header6">6. Wildlife</h1>
+                    <div class="card-body6">
+                      <h1 class="card-titel">6. Wildlife</h1>
+                      <h5 class="card-title">What can cause you to encounter wildlife:</h5>
+                      <p class="card-text">You are disturbing the wildlife’s habitat in an area where human activity is low.</p>
+                      <p class="card-text">If you did not store your food or dispose of your waste properly, they can attract
+                        wildlife.</p>
+                      <p class="card-text">You are wearing strongly scented products. Some strong odors might attract wildlife.</p>
+                      <h5 class="card-text">What happens when you encounter wildlife:</h5>
+                      <p class="card-text">You might get attacked by provoked or scared animals. You might get bitten or stung by
+                        poisonous snakes, spiders, and other insects. Wildlife might take your food or damage your stuff.</p>
+                      <h5 class="card-text">How to avoid encountering wildlife</h5>
+                      <p class="card-text"></p>
+                      <p class="card-text">Make loud noises (in a considerate manner, not by blasting loud music). A bear bell is a
+                        common accessory for people climbing in areas with a bear population. Walking loudly will also keep a lot of
+                        animals and snakes away.</p>
+                      <p class="card-text">Store your food properly. Use ziplocks or airtight containers to keep the smell in. Store
+                        your trash properly. Leaving food waste around is like leaving breadcrumbs for the animals.</p>
+                      <p class="card-text">Use bug sprays. Avoid wearing bright, floral colored clothing which may attract bees and
+                        wasps.</p>
+                      <h5 class="card-text">What to do if you encounter wildlife:</h5>
+                      <p class="card-text">Don’t approach them. Don’t scare them. Back away slowly and quietly. Don’t feed any
+                        wildlife. Not even the friendly, harmless looking ones like deer or squirrels. Once they are used to being
+                        fed by humans, they will start approaching all human for food. And they won’t take no for an answer!</p>
+                      <p class="card-text">If you think you are in danger, flee where possible, preferably to higher grounds. If you
+                        don’t think you can outrun them, you should make loud noises. You can also make yourself appear bigger by
+                        standing tall and grabbing large sticks or rocks. Hire a guide. New climbers should always hire a guide.
+                        Even experienced climbers should hire a guide when going on more challenging climbs.</p>
+                    </div>
+                  </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h2 class="card-header7"> 7. Poisonous Plants</h2>
+                    <div class="card-body7">
+                      <h2 class="card-titel"> 7. Poisonous Plants</h2>
+                      <h5 class="card-title">What happens when you come into contact with poisonous plants</h5>
+                      <p class="card-text">You might get mild to severe skin irritation.</p>
+                      <p class="card-text">Some poisonous plants are deadly if ingested.</p>
+                      <p class="card-text">How to avoid coming into contact with poisonous plants :</p>
+                      <p class="card-text">Learn how to identify the common poisonous plants in the area where you are climbing.</p>
+                      <h5 class="card-text">What to do if you came into contact with poisonous plants:</h5>
+                      <p class="card-text">Wash the affected area. If ingested, try to get yourself to throw up. Take note if the
+                        irritation or pain worsen with time. Return back to camp if this happens. Seek medical attention.</p>
+                    </div>
+                  </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h2 class="card-header">Hazards Caused By Human Factors</h2>
+                    <h2 class="card-header8">8. Insufficient Planning And Preparation</h2>
+                    <div class="card-body8">
+                      <h2 class="card-titel">8. Insufficient Planning And Preparation</h2>
+                      <h5 class="card-title">What happens when you are unprepared:</h5>
+                      <p class="card-text">This leads to many of the hazards listed in this article.</p>
+                      <p class="card-text">How to avoid being unprepared:</p>
+                      <p class="card-text">Hire a guide. New climbers should always hire a guide. Even experienced climbers should
+                        hire a guide when going on more challenging climbs. Learn all you can about the mountain you are climbing.
+                        Do your research. Read blogs or talk to people who have done the climb before. Ask for advice. Take courses,
+                        watch videos, read books, join climbing communities. Gain more experience with shorter or easier climbs.</p>
+                      <p class="card-text">What to do if you find yourself unprepared</p>
+                      <p class="card-text">Consider postponing your climb until you are sufficiently prepared. If you are already in the middle of a climb, consider turning back and returning when you are more ready.</p>
+                    </div>
+                  </div>
+                   <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h4 class="card-header10">10. Incorrect Attitude Or Mindset</h4>
+                    <div class="card-body10">
+                      <h4 class="card-h">10. Incorrect Attitude Or Mindset</h4>
+                      <h5 class="card-title">Noone can take responsibility for your safety. People can guide and tell you what to do but they are not your eyes and ears.</h5>
+                      <p class="card-text">These are some of the things you should not be doing </p>
+                      <p class="card-text"> Being over-reliant on others</p>
+                      <p class="card-text"> Being overconfident. </p>
+                      <p class="card-text">Following others blindly.` </p>
+                      <p class="card-text"> If someone is doing something you find unsafe, don’t follow blindly. If someone is doing something you don’t have the experience with, don’t follow blindly.</p>
+                      <p class="card-text">If someone has made a wrong decision, don’t just go with the flow. Let them know. Maybe they overlooked something. Or maybe you missed something. It is better to be safe than sorry. </p>
+                      <p class="card-text">Not knowing when to stop. A lot of mountain climbing is about enduring pain and exhaustion. But listen to your body. Don’t push yourself past your breaking point. </p>
+                      <p class="card-text"> Don’t focus on the ascend and forget about the descent. You might be able to make it to the summit, but going down isn’t necessarily easier.</p>
+                      <p class="card-text">Not listening to advice. If you have watched the 2015 film Everest, you will know that many climbers died because they did not listen to their expedition leader. If your guide or a more experienced climber give you advice, take it. </p>
+                      <p class="card-text"> Ignoring rules. Rules are there for a reason. Often, the rules are added after some accidents have occurred. These rules include designated climbing seasons, designated routes, warning signs, closed zones etc.</p>
+                    </div>
+                </div>
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header11">11. Getting Lost</h4>
+                  <div class="card-body11">
+                    <h4 class="card-titel">11. Getting Lost</h4>
+                    <h5 class="card-title">What can cause you to get lost:</h5>
+                    <p class="card-text">You lost sight of your fellow climber and end up taking a wrong turn. You took a shortcut.</p>
+                    <p class="card-text">What happens when you get lost:</p>
+                    <p class="card-text">You risk being exposed to the elements for long periods of time. You risk dehydration or starvation. You risk getting heat exhaustion or hypothermia. How to avoid getting lost:</p>
+                    <p class="card-text">Stay in pairs. If you can’t catch up with the person in front of you, let them know and ask them to slow down. Or look for someone else whose pace more closely matches yours. Even if you have to pee, try not to wander too far away from your partner. Stick to popular routes. Don’t go bashing through closed routes, or take random shortcuts for the sake of adventure. There could be hidden dangers or outdated misleading signposts. Always be on the lookout for unique landmarks such as an oddly shaped tree or a strange rock formation. This helps when you need to retrace your steps or find yourself going in circles. Bring a whistle. You are more likely to get help if people can hear you.</p>
+                    <p class="card-text">What to do if you are lost:</p>
+                    <p class="card-text">Stay calm. Stay where you are for a while. You know how it is when you are looking for someone and that same person was looking for you? And you end up somehow missing each other? If you stay where you are, someone might just come looking. Or someone else might come along who can help you. Retrace your steps. It’s better to back the way you came from than to keep pushing on. If all else fails, whistle away!</p>
+                  </div>
+                </div>
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header12">12. Falling</h4>
+                  <div class="card-body12">
+                    <h5 class="card-title">What can cause you to fall:</h5>
+                    <p class="card-text">Stepping on uneven, unstable or slippery surfaces. Losing your footing or balance on steep terrains.</p>
+                    <p class="card-text">Stepping on uneven, unstable or slippery surfaces. Losing your footing or balance on steep terrains. Stepping on crevices (deep cracks in a rock) or crevasses (deep cracks in ice). Failure of safety equipment such as barriers, railings, anchors, ropes etc. Accidents on vertical climbs. Other people. This happens when you have safety ropes attached to one another. Climbing too close to other people increases the risks of the domino effect. What happens when you fall:</p>
+                    <p class="card-text">What happens when you fall:</p>
+                    <p class="card-text">Minor injuries include sprains, strains, bruises, cuts etc. Major injuries include fractures, dislocations, head injuries, major bleeding etc. How to avoid falling:</p>
+                    <p class="card-text">How to avoid falling:</p>
+                    <p class="card-text">Keep your eyes on where you are going. Stay away from edges where there is a huge drop in levels. Look out for icy, wet or mossy surfaces which are usually very slippery. Be on the lookout for crevices or crevasses. Check that the rocks or ice are stable before stepping on them. Lean slightly forward when going up steep inclines. Your backpack might be throwing off your center of gravity and it’s easy to lose balance. If you are using any anchors or belay points, ensure that you are properly secured to them. Check the conditions of any safety equipment before using. Relying on a piece of faulty safety equipment is disastrous. Keep a safe distance away from other climbers. If you are climbing in a roped team, be extra careful when crossing hazards.</p>
+                    <p class="card-text">What to do if you fall:</p>
+                    <p class="card-text">Protect your head (if you are quick enough to react). Check yourself for injuries. Where does it hurt? Are you feeling dizzy or nauseous? Are you bleeding? Is anything broken? Clean up and stop any bleeding. Avoid moving anything that’s broken. Call for help. If no help is available, take a few moments to calm down and look for a safe way back up. Let someone know if you have any headaches, dizziness or nausea. These could be signs of head injuries.</p>
+                  </div>
+                </div>
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header13">13. Dehydration</h4>
+                  <div class="card-body13">
+                    <h5 class="card-title">What can cause you to get dehydrated:</h5>
+                    <p class="card-text">our water bottle is hard to reach. Humans are lazy, if something is not easily accessible, we will just avoid doing it. You didn’t bring enough water. You avoid drinking water because you want to avoid having to pee.</p>
+                    <p class="card-text">our water bottle is hard to reach. Humans are lazy, if something is not easily accessible, we will just avoid doing it. You didn’t bring enough water. You avoid drinking water because you want to avoid having to pee.</p>
+                    <p class="card-text">Your mouth is dry, your lips are chapped, you get headaches and you haven’t had to pee for hours. In hot weather, you are more likely to suffer from heat injuries. You might lose your appetite and not consume enough calories. Fatigue set in and you become more careless when climbing.</p>
+                    <p class="card-text">Drink regularly, even if you are not thirsty. Taking small sips regularly fels better than chugging an entire bottle down at one go. Bring sufficient water. Do not avoid bringing more water just because it’s heavy. Fill up your bottles whenever possible. Remind each other to hydrate. What to do if you get dehydrated:</p>
+                    <p class="card-text">Drink! Take a break. Your body cannot immediately hydrate itself. Rest for at least half an hour.</p>
+                  </div>
+                </div>
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header14">14. Equipment Failure</h4>
+                  <div class="card-body14">
+                    <h5 class="card-title">Your own equipment can fail. So can the existing equipment on the mountains such as anchors, ropes, ladders etc.</h5>
+                    <p class="card-text">You are not familiar with the use of the equipment due to a lack of training or practice. You did not use the equipment properly. This includes overloading the equipment or using them for other purposes than what it was designed for. Even if the equipment doesn’t fail, using it improperly increase the risk of injuries. The equipment was not maintained properly. You did not check the condition of the equipment before using it. The equipment is being used beyond it’s recommended lifespan. What happens when equipment fails:</p>
+                    <p class="card-text">What happens when equipment fails: You risk getting serious injuries. It might be lethal if these are safety equipment like anchors or oxygen tanks etc.</p>
+                    <p class="card-text">What happens when equipment fails: You risk getting serious injuries. It might be lethal if these are safety equipment like anchors or oxygen tanks etc. How to avoid equipment failure: Always be familiar with any e</p>
+                    <p class="card-text">Always be familiar with any equipment you might be using. Do not assume you can pick it up during the climb or expect to be guided along by others. Be aware of the lifespans of the equipment. But this might not always be a good guide since it varies widely on how the equipment is used and maintained. Learn how to tell if the equipment is safe or unsafe for use. Always check the condition of the equipment before using.   Always clean, store and maintain your equipment properly. What to do if equipment fails:</p>
+                    <p class="card-text">What to do if equipment fails: Stop using it immediately. Get a replacement. Return to camp if you need to. Don’t assume that you can do without it. Inform others. Don’t leave the equipment lying around. Someone else might accidentally use it. Make sure you don’t forget any important piece of climbing equipment on this list.</p>
+                  </div>
+                </div>
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header15">15. Actions Of Other Climbers</h4>
+                  <div class="card-body15">
+                    <h5 class="card-title">What are the dangers that other climbers can cause:</h5>>
+                    <p class="card-text">Other climbers may take unnecessary risks and cause injuries to themselves and others. They could be reckless or uninformed. When climbers fall, they can cause other people to fall as well. They may also drop tools and pieces of equipment which may hit others. Climbing with other people can sometimes cause peer pressure. You might be climbing faster than you are comfortable with to keep up with their pace. You might be taking more risks to appear more competent to more experienced climbers. All of these can lead to fatigue and injuries.</p>
+                    <p class="card-text">What you can do:</p>
+                    <p class="card-text">Be aware of the climbers around you. If someone is doing something unsafe, let them know. Don’t leave it as someone else’s problem. That someone else is you. If you see a hazard, always let the person in front or behind you know. Don’t assume that they know. Do not compare yourself with others. Do not take unnecessary risks to appear more competent or experienced. If you think that someone in your group is not ready for the climb, share your concerns with them. Do not attack them but let them know about the risks they are causing to themselves and to the people around them.</p>
+                  </div>
+                </div>
+              
+                <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                  <h4 class="card-header16">Increasing Dangers From Climate Change</h4>
+                  <div class="card-body16">
+                    <h5 class="card-title">Due to climate change, mountain climbing is becoming more dangerous in recent years.</h5>
+                    <p class="card-text">Rising temperatures are causing ice and snow to melt. This leads to cracks in the terrains and loosening ice and rocks in the mountains.</p>
+                    <p class="card-text">Climate change also creates more unpredictable weather changes. It also causes bigger variations in day time and night time temperatures.</p>
+                    <p class="card-text">Natural disasters might also occur more suddenly and frequently.</p>
+                  </div>
+                </div>
+                  <div class="card text-dark  mb-3" style="max-width: 70rem;">
+                    <h4 class="card-header17">Related Questions</h4>
+                    <div class="card-body17">
+                      <h5 class="card-title">What are the dangers of climbing Mount Everest?</h5>
+                      <p class="card-text">The same dangers listed here also apply to Mount Everest. Many of the past accidents and deaths were due to human factors. Many beginners and experienced climbers alike have lost their lives on Everest.</p>
+                      <h class="card-text">Which mountain has the most deaths?</h4>
+                      <p class="card-text">Annapurna I in Nepal has the highest fatality rate among the 14 eight-thousanders in the world. It has 32 fatalities for every 100 summits. Although Mount Everest has claimed 297 lives, her fatality rate stands at 1.4 fatalities for every 100 summits.</p>
+                    </div>
+                  </div>
+              
+              </div>
+        </div>
+    </div>
+    <div class="footer row">
+        <footer class="text-center text-lg-start">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                 
+                    <div class="row mt-3">
+                       
+                        <div class=" footer-sec1 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            <div class="">
+                                <img class="" src="../Images/Logo-removebg-preview.png" alt="">
+                            </div>
+                            <p>
+                                The Mountains are calling and I must go
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Links
+                            </h6>
+                            <p>
+                                <a href="Homepage.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="org histroy.html" class="text-reset">History</a>
+                            </p>
+                            <p>
+                                <a href="org Hazards.html" class="text-reset">Hazards</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Types</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Techniques</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Sheltering</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                mountainsite@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i>021-32436910</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center">
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+                <h2 class="footer1 text-center">&copy; Reserved By 2023</h2>
+                <h2 class="footer1 text-center">Designed By Mounatin Site</h2>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script>
+    // function namecheck() {
+    //         var name = document.getElementById("name").value;
+    //         if (name == "") {
+    //             document.getElementById("nameempty").style.display = "block";
+    //         }
+    //         else {
+    //             document.getElementById("nameempty").style.display = "none";
+    //         }
+    //         if (name.match(/[{A-Z}]/)) {
+    //             document.getElementById("caps").style.display = "none";
+    //         }
+    //         else {
+    //             document.getElementById("caps").style.display = "block";
+    //         }
+    //     }
+    // function close(){
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var password = document.getElementById("pass").value;
+    //     var rpassword = document.getElementById("rpass").value;
+
+    //     if (name == "") {
+    //         document.getElementById("Field-name").innerHTML = "Field is empty";
+    //         document.getElementById("close").style.display = "none";
+
+    //     }
+    //     else if (email == "") {
+    //         document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-email").innerHTML = "Field is Empty";
+    //     }
+    //     else if (password == "") {
+    //         document.getElementById("Field-email").innerHTML = "";
+    //         document.getElementById("Field-pass").innerHTML = "Field is Empty";
+    //     }
+    //     else if (rpassword == "") {
+    //         document.getElementById("Field-pass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Field Is Empty";
+    //     }
+    //     else if (rpassword != password) {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Match Your Password";
+    //     }
+    //     // else {
+
+    //     // }       
+    // }
+    // function check(){
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var password = document.getElementById("pass").value;
+    //     var rpassword = document.getElementById("rpass").value;
+    //     var element = document.getElementById("close");
+
+    //     if (name == "") {
+    //         // document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-name").innerHTML = "Field is empty";
+    //     }
+    //     else if (email == "") {
+    //         document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-email").innerHTML = "Field is Empty";
+    //     }
+    //     else if (password == "") {
+    //         document.getElementById("Field-email").innerHTML = "";
+    //         document.getElementById("Field-pass").innerHTML = "Field is Empty";
+    //     }
+    //     else if (rpassword == "") {
+    //         document.getElementById("Field-pass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Field Is Empty";
+    //     }
+    //     else if (rpassword != password) {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Match Your Password";
+    //     }
+    //     else {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         element.setAttribute("data-bs-dismiss", "modal");
+    //         Swal.fire(
+    //             'Good job!',
+    //             'Your Form has been submitted',
+    //             'success',
+    //             // 'data-bs-dismiss',
+    //             // 'modal'
+    //             )
+    //     }
+    // }
+    // function require1()
+    // {
+    //     var name1 = document.getElementById("name").value
+    //     var cap = document.getElementById("caps").value
+    //     if(name1.match(/[{A-Z}]/)){
+    //         caps.style.display = "none"
+    //     }
+    //     else
+    //     {
+    //         caps.style.display = "block"
+    //     }
+    // }
+    // function require2()
+    // {
+    //     var mail = document.getElementById("email").value
+    //     var cap = document.getElementById("caps1").value
+    //     if(name1.match(/[{@}]/)){
+    //         cap.style.display = "none"
+    //     }
+    //     else
+    //     {
+    //         cap.style.display = "block"
+    //     }
+    // }
+
+    // Modal Form Java script
+
+    function namecheck() {
+        var name = document.getElementById("name").value;
+        if (name == "") {
+            document.getElementById("name1").style.display = "block";
+        }
+        else {
+            document.getElementById("name1").style.display = "none";
+        }
+        if (name.match(/[{A-Z}]/)) {
+            document.getElementById("name2").style.display = "none";
+        }
+        else {
+            document.getElementById("name2").style.display = "block";
+        }
+    }
+    function passcheck() {
+        var pass = document.getElementById("pass").value;
+        if (pass == "") {
+            document.getElementById("pass1").style.display = "block"
+        }
+        else {
+            document.getElementById("pass1").style.display = "none"
+        }
+        if (pass.length <= 8) {
+            document.getElementById("pass2").style.display = "block"
+        }
+        else {
+            document.getElementById("pass2").style.display = "none"
+        }
+    }
+    function repasscheck() {
+        var repass = document.getElementById("repass").value;
+        var pass = document.getElementById("pass").value;
+        if (repass == "") {
+            document.getElementById("repass1").style.display = "block";
+        }
+        else if (pass != repass) {
+            document.getElementById("repass1").style.display = "none";
+            document.getElementById("repass2").style.display = "block";
+        }
+        else {
+            document.getElementById("repass2").style.display = "none";
+            element.setAttribute("data-bs-dismiss", "modal");
+            Swal.fire(
+                'Good job!',
+                'Your Form has been submitted',
+                'success',
+                // 'data-bs-dismiss',
+                // 'modal'
+            )
+        }
+    }
+    function emailcheck() {
+        var email = document.getElementById("email").value
+        if (email == "") {
+            document.getElementById("email1").style.display = "block";
+        }
+        else {
+            document.getElementById("email1").style.display = "none";
+        }
+    }
+    function check() {
+        var name = document.getElementById("name").value;
+        var pass = document.getElementById("pass").value;
+        var repass = document.getElementById("repass").value;
+        var email = document.getElementById("email").value;
+        if (name == "") {
+            document.getElementById("name1").style.display = "block";
+        }
+        else {
+            document.getElementById("name1").style.display = "none";
+        }
+        if (name.match(/[{A-Z}]/)) {
+            document.getElementById("name2").style.display = "none";
+        }
+        else {
+            document.getElementById("name2").style.display = "block";
+        }
+
+        if (pass == "") {
+            document.getElementById("pass1").style.display = "block"
+        }
+        else {
+            document.getElementById("pass1").style.display = "none"
+        }
+        if (pass.length <= 8) {
+            document.getElementById("pass2").style.display = "block"
+        }
+        else {
+            document.getElementById("pass2").style.display = "none"
+        }
+
+        if (repass == "") {
+            document.getElementById("repass1").style.display = "block";
+        }
+        else if (pass != repass) {
+            document.getElementById("repass1").style.display = "none";
+            document.getElementById("repass2").style.display = "block";
+        }
+        else {
+            document.getElementById("repass2").style.display = "none";
+        }
+        if (email == "") {
+            document.getElementById("email1").style.display = "block";
+        }
+        else {
+            document.getElementById("email1").style.display = "none";
+        }
+    }
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    // }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+<script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  
+  <script>
+    $('.card-body').hide()
+    $('.card-header2').click(function (){
+      $('.card-body').toggle(1000);
+      $('.card-header2').hide(1000);
+    })
+    $('.card-body1').hide()
+    $('.card-header1').click(function () {
+      $('.card-body1').toggle(1000);
+      $('.card-header1').hide(1000);
+    });
+    $('.card-body1').click(function(){
+      $('.card-header1').show(1000);
+      $('.card-body1').hide(1000);
+    })
+    $('.card-body2').hide()
+    $('.card-header3').click(function () {
+      $('.card-body2').toggle(1000);
+      $('.card-header3').hide(1000);
+    });
+    $('.card-body2').click(function(){
+      $('.card-header3').show(1000);
+      $('.card-body2').hide(1000);
+    })
+    $('.card-body3').hide()
+    $('.card-header4').click(function () {
+      $('.card-body3').toggle(1000);
+      $('.card-header4').hide(1000);
+    });
+    $('.card-body3').click(function (){
+    $('.card-header4').show(1000);
+    $('.card-body3').hide(1000);
+  })
+    $('.card-body5').hide()
+    $('.card-header5').click(function () {
+      $('.card-body5').toggle(1000);
+      $('.card-header5').hide(1000);
+    });
+    $('.card-body5').click(function(){
+      $('.card-header5').show(1000);
+      $('.card-body5').hide(1000);
+    })
+    $('.card-body6').hide()
+    $('.card-header6').click(function () {
+      $('.card-body6').toggle(1000);
+      $('.card-header6').hide(1000);
+    });
+    $('.card-body6').click(function(){
+      $('.card-header6').show(1000);
+      $('.card-body6').hide(1000);
+    })
+    $('.card-body7').hide()
+    $('.card-header7').click(function () {
+      $('.card-body7').toggle(1000);
+      $('.card-header7').hide(1000);
+    });
+    $('.card-body7').click(function(){
+      $('.card-header7').show(1000);
+      $('.card-body7').hide(1000);
+    })
+    $('.card-body8').hide()
+    $('.card-header8').click(function () {
+      $('.card-body8').toggle(1000);
+      $('.card-header8').hide(1000);
+    });
+    $('.card-body8').click(function(){
+      $('.card-header8').show(1000);
+      $('.card-body8').hide(1000);
+      $(',card-header8').hide(100);
+    });
+
+    // $('.card-body').hide()
+    // $('.card-header').click(function(){
+    //     $('.card-body').toggle(1000)
+    // })
+    $('.card-body10').hide()
+    $('.card-header10').click(function(){
+        $('.card-body10').toggle(1000);
+        $('.card-header10').hide(100);
+    });
+    $('.card-body10').click(function(){
+      $('.card-header10').show(1000);
+      $('.card-body10').hide(1000);
+    })
+    $('.card-body11').hide()
+    $('.card-header11').click(function(){
+        $('.card-body11').toggle(1000);
+       $('.card-header11').hide(1000); 
+    });
+    $('.card-body11').click(function(){
+      $('.card-header11').show(1000);
+      $('.card-body11').hide(100);
+    })
+    $('.card-body12').hide()
+    $('.card-header12').click(function(){
+        $('.card-body12').toggle(1000);
+        $('.card-header12').hide(1000);
+    });
+    $('.card-body12').click(function(){
+      $('.card-header12').show(1000);
+      $('.card-body12').hide(1000);
+    })
+    $('.card-body13').hide()
+    $('.card-header13').click(function(){
+        $('.card-body13').toggle(1000);
+        $('.card-header13').hide(1000);
+    });
+    $('.card-body13').click(function(){
+      $('.card-header13').show(1000);
+      $('.card-body13').hide(1000);
+    })
+    $('.card-body14').hide()
+    $('.card-header14').click(function(){
+        $('.card-body14').toggle(1000);
+        $('.card-header14').hide(1000);
+    });
+    $('.card-body14').click(function(){
+      $('.card-header14').show(1000);
+      $('.card-body14').hide(1000);
+    })
+    $('.card-body15').hide()
+    $('.card-header15').click(function(){
+        $('.card-body15').toggle(1000);
+        $('.card-header15').hide(1000);
+    });
+    $('.card-body15').click(function(){
+      $('.card-header15').show(1000);
+      $('.card-body15').hide(1000);
+    })
+    $('.card-body16').hide()
+    $('.card-header16').click(function(){
+        $('.card-body16').toggle(1000);
+        $('.card-header16').hide(1000);
+    });
+    $('.card-body16').click(function(){
+      $('.card-header16').show(1000);
+      $('.card-body16').hide(1000);
+    })
+    $('.card-body17').hide()
+    $('.card-header17').click(function(){
+        $('.card-body17').toggle(1000);
+        $('.card-header17').hide(1000);
+    });
+    $('.card-body17').click(function(){
+      $('.card-header17').show(1000);
+      $('.card-body17').hide(1000);
+    })
+    $('.card-body18').hide()
+    $('.card-header18').click(function(){
+        $('.card-body18').toggle(1000);
+        $('.card-header18').hide(1000);
+        $('.card-body19').hide(1000);
+        $('.card-header19').show(1000);
+    });
+    $('.card-body18').click(function(){
+      $('.card-header18').show(1000);
+      $('.card-body18').hide(1000);
+    })
+    $('.card-body19').hide()
+    $('.card-header19').click(function(){
+        $('.card-body19').toggle(1000);
+        $('.card-header19').hide(1000);
+        $('.card-body18').hide(1000);
+        $('.card-header18').show(1000);
+    });
+    $('.card-body19').click(function(){
+      $('.card-header19').show(1000);
+      $('.card-body19').hide(1000);
+    })
+  </script>
+
+</html>

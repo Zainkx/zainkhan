@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Mountain Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/Homepage.css">
+    <link rel="stylesheet" href="Css/Wahab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="Images/Logo-removebg-preview.png" type="image/x-icon">
+    <div class="col-md-12 top-bar row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1">
+            <img src="Images/Logo-removebg-preview.png" class="w-100 h-100" alt="">
+        </div>
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-2 py-5 px-3 text-center">
+            <i class="fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#modalId"></i>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm py-0">
+        <div class="container">
+            <div class="img col-2">
+            </div>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-md-10" id="collapsibleNavId">
+                <ul class="navbar-nav col-md-8 text-center">
+                    <li class="nav-item px-5">
+                        <a class="nav-link py-3 px-3" href="Homepage.html" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  py-3 px-3 " href="Pages/org histroy.html" aria-current="page">History<span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link py-3 px-3" href="Pages/org Hazards.html">Hazards</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  py-3 px-3 dropdown-toggle" href="#" id="dropdownId"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="Pages/himalays.html">Himalays</a>
+                            <a class="dropdown-item" href="Pages/Cliff.html">Cliff</a>
+                            <a class="dropdown-item" href="Pages/Valcono.html">Valcano</a>
+                            <a class="dropdown-item" href="Pages/Urals.html">Urals</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown px-5">
+                        <a class="nav-link  py-3 px-3 dropdown-toggle" href="#" id="dropdownId"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Techniques</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="Pages/Climbing Techniques.html">Climbing Techniques</a>
+                            <a class="dropdown-item" href="Pages/Rope Managment.html">Rope Management</a>
+                            <a class="dropdown-item" href="Pages/Ice _ snow Tec.html">Ice and Snow Techniques</a>
+                            <a class="dropdown-item" href="Pages/Weather Forcasting.html">Weather Forecasting</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link py-3 px-3  dropdown-toggle" href="#" id="dropdownId"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sheltering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="Pages/Base camp.html">Base Camp</a>
+                            <a class="dropdown-item" href="Pages/Hut.html">Hut</a>
+                            <a class="dropdown-item" href="Pages/Tent.html">Tent</a>
+                            <a class="dropdown-item" href="Pages/Snow Cave.html">Snow Cave</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <h5 class="modal-title" id="modalTitleId">Login Here</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    id="close" onclick="close()"></button>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="contact col-6">
+                                    <div class="contactsub1 col-lg-6 my-5">
+                                        <input type="text" class="name py-2 px-2 col-lg-12 border"
+                                            placeholder="Enter Your Name" id="name" onkeyup="namecheck()">
+                                        <p style="color: red;font-size: 10px; display: none;" class="name" id="name1">
+                                            Field must not be empty
+                                        </p>
+                                        <p style="color: red;font-size: 10px; display: none;" class="name" id="name2">
+                                            Name must contain a Capital
+                                            Alphabet in it
+                                        </p>
+                                        <br><br>
+                                        <input type="email" class="email py-2 px-2 col-lg-12 border"
+                                            placeholder="Enter Your Email" id="email" onkeyup="emailcheck()">
+                                        <p style="color: red;font-size: 10px;display: none;" class="email1" id="email1">
+                                            Field must not be empty</p>
+                                        <br><br>
+                                        <input type="password" class="password py-2 px-2 col-lg-12 border"
+                                            placeholder="Enter your Password" id="pass" onkeyup="passcheck()">
+                                        <p style="color: red;font-size: 10px;display: none;" class="pass" id="pass1">
+                                            Password field must not be
+                                            empty</p>
+                                        <p style="color: red;font-size: 10px;display: none;" class="pass" id="pass2">
+                                            Password must contain 8
+                                            characters in it</p>
+                                        <br><br>
+                                        <input type="password" class="rpassword py-2 px-2 col-lg-12 border"
+                                            placeholder="Confirm Password" id="repass" onkeyup="repasscheck()">
+                                        <p style="color: red;font-size: 10px;display: none;" class="repass"
+                                            id="repass1">Field must not be empty</p>
+                                        <p style="color: red;font-size: 10px;display: none;" class="repass"
+                                            id="repass2">Password must be same</p>
+                                        <br><br>
+                                        <button id="check" class="Sign-in" class="btn btn-primary"
+                                            onclick="check()">Sign In</button>
+                                    </div>
+                                </div>
+                                <div class="form-img col-lg-4">
+                                    <img src="../Images/Login-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="section1 col-md-12 col-12">
+        <div class="Tagline col-md-12 text-center">
+            <h2 class="text-center">The<span style="color:lightblue;"> Mountains are calling </span>and I must go</h2>
+        </div>
+    </div>
+    <div class="section2 container-fluid">
+        <div class="row">
+            <h2 class="text-center mb-5">Our Gallery</h2>
+            <div class="col-lg-2 col-md-12 mb-4 mb-lg-0 px-md-3">
+                <img src="Images/Mountain2.jpg" class="w-100 h-50 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                <img src="./Images/k2 mountain 1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+            </div>
+
+            <div class="col-lg-2 mb-4 mb-lg-0 px-md-3">
+                <img src="Images/nanga parbat 1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                <img src="Images/nanga parbat 2.jpg"
+                    class="w-100 h- shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            </div>
+
+            <div class="row col-lg-4 mb-4 mb-lg-0 px-md-3">
+                <img src="Images/nanga parbat 6.jpg" class="w-100 h-50 shadow-1-strong rounded mb-3"
+                    alt="Waves at Sea" />
+
+                <div class="col-lg-6 mb-md-5 px-md-2">
+                    <img src="Images/nanga parbat 3.jpg"
+                        class="w-100 h-50 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                </div>
+                <div class="col-lg-6 mb-md-5 px-md-2">
+                    <img src="Images/nanga parbat 4.jpg"
+                        class="w-100 h-50 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+                </div>
+            </div>
+
+            <div class="col-lg-2 mb-4 mb-lg-0 px-md-3">
+                <img src="Images/nanga parbat 5.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                <img src="Images/nanga parbat 6.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            </div>
+
+            <div class="col-lg-2 mb-4 mb-lg-0 px-md-3">
+                <img src="Images/nanga parbat 7.jpg"
+                    class="w-100 h-50 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                <img src="Images/nanga parbat.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+            </div>
+        </div>
+    </div>
+    <div class="before-footer container">
+        <div class="col-md-12 row">
+            <div class="form-group">
+                <h4>Write to Our Newsletter</h4>
+                <label for="ad"></label>
+                <input type="search" placeholder="Feel Free To Write" class="col-10 py-4 px-3 h-50" name="" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer row">
+        <footer class="text-center text-lg-start">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                 
+                    <div class="row mt-3">
+                       
+                        <div class=" footer-sec1 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            <div class="">
+                                <img class="" src="./Images/Logo-removebg-preview.png" alt="">
+                            </div>
+                            <p>
+                                The Mountains are calling and I must go
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Links
+                            </h6>
+                            <p>
+                                <a href="Homepage.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="Pages/org histroy.html" class="text-reset">History</a>
+                            </p>
+                            <p>
+                                <a href="Pages/org Hazards.html" class="text-reset">Hazards</a>
+                            </p>
+                            <p>
+                                <a href="Pages/Valcono.html" class="text-reset">Types</a>
+                            </p>
+                            <p>
+                                <a href="Pages/Weather Forcasting.html" class="text-reset">Techniques</a>
+                            </p>
+                            <p>
+                                <a href="Pages/Base camp.html" class="text-reset">Sheltering</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                mountainsite@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i>021-32436910</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center">
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+                <h2 class="footer1 text-center">&copy; Reserved By 2023</h2>
+                <h2 class="footer1 text-center">Designed By Mounatin Site</h2>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script>
+    // function namecheck() {
+    //         var name = document.getElementById("name").value;
+    //         if (name == "") {
+    //             document.getElementById("nameempty").style.display = "block";
+    //         }
+    //         else {
+    //             document.getElementById("nameempty").style.display = "none";
+    //         }
+    //         if (name.match(/[{A-Z}]/)) {
+    //             document.getElementById("caps").style.display = "none";
+    //         }
+    //         else {
+    //             document.getElementById("caps").style.display = "block";
+    //         }
+    //     }
+    // function close(){
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var password = document.getElementById("pass").value;
+    //     var rpassword = document.getElementById("rpass").value;
+
+    //     if (name == "") {
+    //         document.getElementById("Field-name").innerHTML = "Field is empty";
+    //         document.getElementById("close").style.display = "none";
+
+    //     }
+    //     else if (email == "") {
+    //         document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-email").innerHTML = "Field is Empty";
+    //     }
+    //     else if (password == "") {
+    //         document.getElementById("Field-email").innerHTML = "";
+    //         document.getElementById("Field-pass").innerHTML = "Field is Empty";
+    //     }
+    //     else if (rpassword == "") {
+    //         document.getElementById("Field-pass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Field Is Empty";
+    //     }
+    //     else if (rpassword != password) {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Match Your Password";
+    //     }
+    //     // else {
+
+    //     // }       
+    // }
+    // function check(){
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var password = document.getElementById("pass").value;
+    //     var rpassword = document.getElementById("rpass").value;
+    //     var element = document.getElementById("close");
+
+    //     if (name == "") {
+    //         // document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-name").innerHTML = "Field is empty";
+    //     }
+    //     else if (email == "") {
+    //         document.getElementById("Field-name").innerHTML = "";
+    //         document.getElementById("Field-email").innerHTML = "Field is Empty";
+    //     }
+    //     else if (password == "") {
+    //         document.getElementById("Field-email").innerHTML = "";
+    //         document.getElementById("Field-pass").innerHTML = "Field is Empty";
+    //     }
+    //     else if (rpassword == "") {
+    //         document.getElementById("Field-pass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Field Is Empty";
+    //     }
+    //     else if (rpassword != password) {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         document.getElementById("Field-rpass").innerHTML = "Match Your Password";
+    //     }
+    //     else {
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    //         element.setAttribute("data-bs-dismiss", "modal");
+    //         Swal.fire(
+    //             'Good job!',
+    //             'Your Form has been submitted',
+    //             'success',
+    //             // 'data-bs-dismiss',
+    //             // 'modal'
+    //             )
+    //     }
+    // }
+    // function require1()
+    // {
+    //     var name1 = document.getElementById("name").value
+    //     var cap = document.getElementById("caps").value
+    //     if(name1.match(/[{A-Z}]/)){
+    //         caps.style.display = "none"
+    //     }
+    //     else
+    //     {
+    //         caps.style.display = "block"
+    //     }
+    // }
+    // function require2()
+    // {
+    //     var mail = document.getElementById("email").value
+    //     var cap = document.getElementById("caps1").value
+    //     if(name1.match(/[{@}]/)){
+    //         cap.style.display = "none"
+    //     }
+    //     else
+    //     {
+    //         cap.style.display = "block"
+    //     }
+    // }
+
+    // Modal Form Java script
+
+    function namecheck() {
+        var name = document.getElementById("name").value;
+        if (name == "") {
+            document.getElementById("name1").style.display = "block";
+        }
+        else {
+            document.getElementById("name1").style.display = "none";
+        }
+        if (name.match(/[{A-Z}]/)) {
+            document.getElementById("name2").style.display = "none";
+        }
+        else {
+            document.getElementById("name2").style.display = "block";
+        }
+    }
+    function passcheck() {
+        var pass = document.getElementById("pass").value;
+        if (pass == "") {
+            document.getElementById("pass1").style.display = "block"
+        }
+        else {
+            document.getElementById("pass1").style.display = "none"
+        }
+        if (pass.length <= 8) {
+            document.getElementById("pass2").style.display = "block"
+        }
+        else {
+            document.getElementById("pass2").style.display = "none"
+        }
+    }
+    function repasscheck() {
+        var repass = document.getElementById("repass").value;
+        var pass = document.getElementById("pass").value;
+        if (repass == "") {
+            document.getElementById("repass1").style.display = "block";
+        }
+        else if (pass != repass) {
+            document.getElementById("repass1").style.display = "none";
+            document.getElementById("repass2").style.display = "block";
+        }
+        else {
+            document.getElementById("repass2").style.display = "none";
+            element.setAttribute("data-bs-dismiss", "modal");
+            Swal.fire(
+                'Good job!',
+                'Your Form has been submitted',
+                'success',
+                // 'data-bs-dismiss',
+                // 'modal'
+            )
+        }
+    }
+    function emailcheck() {
+        var email = document.getElementById("email").value
+        if (email == "") {
+            document.getElementById("email1").style.display = "block";
+        }
+        else {
+            document.getElementById("email1").style.display = "none";
+        }
+    }
+    function check() {
+        var name = document.getElementById("name").value;
+        var pass = document.getElementById("pass").value;
+        var repass = document.getElementById("repass").value;
+        var email = document.getElementById("email").value;
+        if (name == "") {
+            document.getElementById("name1").style.display = "block";
+        }
+        else {
+            document.getElementById("name1").style.display = "none";
+        }
+        if (name.match(/[{A-Z}]/)) {
+            document.getElementById("name2").style.display = "none";
+        }
+        else {
+            document.getElementById("name2").style.display = "block";
+        }
+
+        if (pass == "") {
+            document.getElementById("pass1").style.display = "block"
+        }
+        else {
+            document.getElementById("pass1").style.display = "none"
+        }
+        if (pass.length <= 8) {
+            document.getElementById("pass2").style.display = "block"
+        }
+        else {
+            document.getElementById("pass2").style.display = "none"
+        }
+
+        if (repass == "") {
+            document.getElementById("repass1").style.display = "block";
+        }
+        else if (pass != repass) {
+            document.getElementById("repass1").style.display = "none";
+            document.getElementById("repass2").style.display = "block";
+        }
+        else {
+            document.getElementById("repass2").style.display = "none";
+        }
+        if (email == "") {
+            document.getElementById("email1").style.display = "block";
+        }
+        else {
+            document.getElementById("email1").style.display = "none";
+        }
+    }
+    //         document.getElementById("Field-rpass").innerHTML = "";
+    // }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+<script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css">
+
+
+</html>
